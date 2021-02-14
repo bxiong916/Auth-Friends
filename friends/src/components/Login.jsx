@@ -32,9 +32,7 @@ const initialCredentials = {
           window.localStorage.setItem("token", res.data.payload);
           history.push("/friends");
         })
-        .catch((err) => {
-          setState({ ...state, error: err.response.data.error });
-        });
+        .catch(err => console.error("cannot login to server: ", err.message));
     };
 
     return (

@@ -33,4 +33,4 @@ const FriendsList = () => {
     );
   };
 
-  export default FriendsLis
+  export default FriendsList;
